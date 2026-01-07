@@ -1,5 +1,6 @@
 <?php
 require_once 'includes/database.php';
+require_once 'includes/header.php';
 
 echo "<h1>TeaKeeper - Test Page</h1>";
 echo "<p>Testing database connection...</p>";
@@ -16,7 +17,7 @@ foreach ($tables as $table) {
     if ($result->num_rows > 0) {
         echo "<p>✓ Table '$table' exists</p>";
     } else {
-        echo "<p style='color: orange;'>Table '$table' not found</p>";
+        echo "<p'>Table '$table' not found</p>";
     }
 }
 
@@ -28,7 +29,7 @@ if ($row['count'] > 0) {
     echo "<h3>First 5 Teas:</h3>";
     $teas = $mysqli->query("SELECT * FROM teas ORDER BY drink_date LIMIT 5");
 
-    echo "<table>";
+    echo "<table border=1>";
     echo "<tr><th>ID</th><th>Date</th><th>Brand</th><th>Name</th><th>Flavor</th></tr>";
 
     while ($tea = $teas->fetch_assoc()) {
@@ -50,4 +51,6 @@ echo "<hr>";
 echo "<h3>Quick Navigation:</h3>";
 echo "<a href='iexport.php'>Go to Import/Export</a> | ";
 echo "<a href='teas.php'>View All Teas</a>";
+
+require_once 'includes/footer.php';
 ?>
