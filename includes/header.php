@@ -19,3 +19,4 @@ require_once 'includes/database.php';
         <a href="teas.php">Teas</a>
         <a href="iexport.php">Import/Export</a>
     </nav>
+    <hr>

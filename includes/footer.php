@@ -1,5 +1,6 @@
 </body>
 <footer>
+    <hr>
     <p>TeaKeeper - Simple Tea Tracker</p>
     <?php
     $result = $mysqli->query("SELECT COUNT(*) as total FROM teas");

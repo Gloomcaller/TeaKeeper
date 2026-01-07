@@ -48,8 +48,8 @@ if ($total > 0) {
             echo "<td><input type='text' name='flavor' value='" . htmlspecialchars($tea['flavor']) . "'></td>";
 
             echo "<td>";
-            echo "<button class=\"ierButton\" type='submit' name='save'>Save</button>";
-            echo "<a href='teas.php'><button class=\"ierButton\" type='button'>Cancel</button></a>";
+            echo "<button class=\"ier-buttons\" type='submit' name='save'>Save</button>";
+            echo "<a href='teas.php'><button class=\"ier-buttons\" type='button'>Cancel</button></a>";
             echo "</td>";
 
             echo "</form>";
@@ -60,12 +60,12 @@ if ($total > 0) {
             echo "<td>" . htmlspecialchars($tea['flavor']) . "</td>";
 
             echo "<td>";
-            echo "<form class=\"ierButton\" method='GET'>";
+            echo "<form class=\"ier-buttons\" method='GET'>";
             echo "<input type='hidden' name='edit' value='" . $tea['id'] . "'>";
             echo "<button type='submit'>Edit</button>";
             echo "</form> ";
 
-            echo "<form class=\"ierButton\" method='GET' onsubmit='return confirm(\"Delete this tea?\")'>";
+            echo "<form class=\"ier-buttons\" method='GET' onsubmit='return confirm(\"Delete this tea?\")'>";
             echo "<input type='hidden' name='delete' value='" . $tea['id'] . "'>";
             echo "<button type='submit'>Delete</button>";
             echo "</form>";

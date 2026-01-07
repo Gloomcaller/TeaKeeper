@@ -1,4 +1,4 @@
-.ierButton {
+.ier-buttons {
     display: inline;
     margin-right: 2px;
     margin-left: 2px;
@@ -6,4 +6,49 @@
 
 td a {
     text-decoration: none;
+}
+
+.cal-month {
+    float: left;
+    width: 30%;
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.cal-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+}
+
+.cal-day {
+    padding: 8px;
+    text-align: center;
+    background: #f0f0f0;
+}
+
+.cal-day.tea-1 {
+    background: #CDDC39;
+}
+
+.cal-day.tea-2 {
+    background: #8BC34A;
+}
+
+.cal-day.tea-3 {
+    background: #4CAF50;
+    color: white;
+}
+
+.cal-count {
+    font-size: 10px;
+    display: block;
+}
+
+.legend-color {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
 }
