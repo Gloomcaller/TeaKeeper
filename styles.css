@@ -1,0 +1,9 @@
+.ierButton {
+    display: inline;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+td a {
+    text-decoration: none;
+}

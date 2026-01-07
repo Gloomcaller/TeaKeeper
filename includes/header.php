@@ -8,7 +8,7 @@ require_once 'includes/database.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeaKeeper</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -16,6 +16,6 @@ require_once 'includes/database.php';
         <a href="index.php">Home</a>
         <a href="calendar.php">Calendar</a>
         <a href="brands.php">Brands</a>
-        <a href="teas.php">All Teas</a>
+        <a href="teas.php">Teas</a>
         <a href="iexport.php">Import/Export</a>
     </nav>
