@@ -15,7 +15,7 @@ require_once 'includes/database.php';
     <nav>
         <a href="index.php">Home</a>
         <a href="calendar.php">Calendar</a>
-        <a href="brands.php">Brands</a>
+        <a href="statistics.php">Statistics</a>
         <a href="teas.php">Teas</a>
         <a href="iexport.php">Import/Export</a>
     </nav>
