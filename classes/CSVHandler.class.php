@@ -74,6 +74,10 @@ class CSVHandler
         if (empty($brand)) {
             return "Brand cannot be empty";
         }
+        $brand_clean = str_replace(' ', '', $brand);
+        if (!ctype_alpha($brand_clean)) {
+            return "Brand should contain only letters and spaces.";
+        }
         $name = trim($row[2]);
         if (empty($name)) {
             return "Tea name cannot be empty";

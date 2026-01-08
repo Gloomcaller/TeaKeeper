@@ -94,6 +94,12 @@ function handleEditSave($mysqli)
     $name = $_POST['name'];
     $flavor = $_POST['flavor'];
 
+    $brand_clean = str_replace(' ', '', $brand);
+    if (!ctype_alpha($brand_clean)) {
+        echo showMessage("Brand should contain only letters and spaces.", 'error');
+        return;
+    }
+
     if (!validateDateFilter($date)) {
         echo showMessage("Invalid date format! Use YYYY-MM-DD", 'error');
         return;
