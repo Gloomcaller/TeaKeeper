@@ -25,8 +25,6 @@ require_once 'includes/header.php';
 
 $csvHandler = new CSVHandler();
 
-echo showMessage("Use the forms below to manage your tea data", 'info');
-
 if (!tableExists($mysqli, 'teas')) {
     echo showMessage("Teas table not found! Please reset database.", 'warning');
 }

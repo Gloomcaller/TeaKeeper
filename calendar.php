@@ -21,7 +21,7 @@ try {
         echo "<div class='cal-grid'>";
         $days = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
         foreach ($days as $day) {
-            echo "<div><small><b>$day</b></small></div>";
+            echo "<div class=\"cal-day-header\"><small><b>$day</b></small></div>";
         }
 
         $first_day = date('N', strtotime("2025-$month-01"));
@@ -54,10 +54,10 @@ try {
     echo "<div style='clear:both;'></div>";
 
     echo "<b>Legend:</b> ";
-    echo "<span><span class='legend-color' style='background:#f0f0f0;'></span>0</span> ";
-    echo "<span><span class='legend-color' style='background:#CDDC39;'></span>1</span> ";
-    echo "<span><span class='legend-color' style='background:#8BC34A;'></span>2</span> ";
-    echo "<span><span class='legend-color' style='background:#4CAF50;'></span>3+</span>";
+    echo "<span><span class='legend-color tea-0'></span>0</span> ";
+    echo "<span><span class='legend-color tea-1'></span>1</span> ";
+    echo "<span><span class='legend-color tea-2'></span>2</span> ";
+    echo "<span><span class='legend-color tea-3'></span>3+</span>";
     echo "</div>";
 
     echo "<h3>Stats</h3>";
