@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About TeaKeeper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.php">Home</a>
+        <a href="calendar.php">Calendar</a>
+        <a href="statistics.php">Statistics</a>
+        <a href="teas.php">Teas</a>
+        <a href="iexport.php">Import/Export</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <hr>
+
+    <div class="container">
+        <h1>About TeaKeeper</h1>
+        <p>TeaKeeper is a simple web application for tracking your tea drinking habits.</p>
+
+        <h2>How to Use:</h2>
+
+        <h3>1. View Your Teas</h3>
+        <p>Go to <a href="teas.php">Teas</a> to see all your recorded teas. You can edit or delete entries.</p>
+
+        <h3>2. Add New Teas</h3>
+        <p>Use the <a href="iexport.php">Import/Export</a> page to:</p>
+        <ul>
+            <li>Upload a CSV file with your tea data</li>
+            <li>Download your current tea list as CSV</li>
+            <li>Reset to sample data</li>
+        </ul>
+
+        <h3>3. View Calendar</h3>
+        <p>The <a href="calendar.php">Calendar</a> shows when you drank tea. Days are color-coded:</p>
+        <ul>
+            <li><span class="legend-color tea-0"></span> No tea</li>
+            <li><span class="legend-color tea-1"></span> 1 tea</li>
+            <li><span class="legend-color tea-2"></span> 2 teas</li>
+            <li><span class="legend-color tea-3"></span> 3+ teas</li>
+        </ul>
+
+        <h3>4. Check Statistics</h3>
+        <p>Visit <a href="statistics.php">Statistics</a> for insights:</p>
+        <ul>
+            <li>Most popular brands</li>
+            <li>Monthly tea consumption</li>
+            <li>Flavor preferences</li>
+        </ul>
+
+        <h3>A. CSV Format</h3>
+        <p>Your CSV file should have this format:</p>
+        <pre>
+            drink_date,brand,tea_name,flavor
+            2025-01-15,Fructus,Earl Grey,Bergamot
+            2025-01-16,dmBio,Peppermint,Mint
+        </pre>
+
+        <hr>
+        <p><strong>Student Project:</strong> TeaKeeper was created as part of the E-Business Application Development
+            course.</p>
+    </div>
+
+    <footer>
+        <hr>
+        <p>TeaKeeper - Simple Tea Tracker</p>
+    </footer>
+</body>
+
+</html>

@@ -254,6 +254,16 @@ td button {
     background: #4CAF50;
 }
 
+.contact-item {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
 @media (max-width: 768px) {
     .cal-month {
         width: 100%;

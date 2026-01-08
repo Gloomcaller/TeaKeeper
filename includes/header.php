@@ -18,5 +18,7 @@ require_once 'includes/database.php';
         <a href="statistics.php">Statistics</a>
         <a href="teas.php">Teas</a>
         <a href="iexport.php">Import/Export</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
     </nav>
     <hr>
