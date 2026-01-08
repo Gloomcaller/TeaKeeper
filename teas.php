@@ -1,6 +1,10 @@
 <?php
 require_once 'includes/database.php';
 require_once 'includes/header.php';
+require_once 'includes/functions.php';
+
+$total_teas = getTeaCount($mysqli);
+echo "<p>Total teas in database: $total_teas</p>";
 
 echo "<h2>All Teas</h2>";
 
@@ -15,7 +19,7 @@ if (isset($_GET['delete'])) {
     $stmt = $mysqli->prepare("DELETE FROM teas WHERE id = ?");
     $stmt->bind_param("i", $_GET['delete']);
     $stmt->execute();
-    echo "<p>Tea deleted!</p>";
+    echo showMessage("Tea deleted!", 'success');
 }
 
 $result = $mysqli->query("SELECT * FROM teas ORDER BY drink_date DESC");
@@ -76,9 +80,12 @@ if ($total > 0) {
     }
 
     echo "</table>";
+} else {
+    echo showMessage("No teas found. Import some data first!", 'warning');
 }
 
 require_once 'includes/footer.php';
+
 function handleEditSave($mysqli)
 {
     $id = $_POST['id'];
@@ -86,6 +93,16 @@ function handleEditSave($mysqli)
     $brand = $_POST['brand'];
     $name = $_POST['name'];
     $flavor = $_POST['flavor'];
+
+    if (!validateDateFilter($date)) {
+        echo showMessage("Invalid date format! Use YYYY-MM-DD", 'error');
+        return;
+    }
+
+    if (empty($brand) || empty($name)) {
+        echo showMessage("Brand and Name are required!", 'error');
+        return;
+    }
 
     $mysqli->begin_transaction();
 
@@ -98,10 +115,10 @@ function handleEditSave($mysqli)
         $mysqli->query("INSERT INTO tea_audit (tea_id, action) VALUES ($id, '$action')");
 
         $mysqli->commit();
-        echo "<p>Tea updated!</p>";
+        echo showMessage("Tea updated successfully!", 'success');
 
     } catch (Exception $e) {
         $mysqli->rollback();
-        echo "<p>Error: " . $e->getMessage() . "</p>";
+        echo showMessage("Error: " . $e->getMessage(), 'error');
     }
 }

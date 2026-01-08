@@ -1,10 +1,10 @@
 <?php
 require_once 'includes/database.php';
 require_once 'classes/CSVHandler.class.php';
-
-$csvHandler = new CSVHandler();
+require_once 'includes/functions.php';
 
 if (isset($_GET['export'])) {
+    $csvHandler = new CSVHandler();
     $data = $csvHandler->exportFromDB($mysqli);
 
     header('Content-Type: text/csv');
@@ -20,25 +20,32 @@ if (isset($_GET['export'])) {
     fclose($output);
     exit;
 }
+
 require_once 'includes/header.php';
+
+$csvHandler = new CSVHandler();
+
+echo showMessage("Use the forms below to manage your tea data", 'info');
+
+if (!tableExists($mysqli, 'teas')) {
+    echo showMessage("Teas table not found! Please reset database.", 'warning');
+}
 
 if (isset($_POST['import']) && isset($_FILES['csvfile'])) {
     $temp_file = $_FILES['csvfile']['tmp_name'];
 
-    // Validate using CSVHandler (uses filter_var)
     $validation = $csvHandler->validateCSV($temp_file);
 
     if ($validation === true) {
-        // Import using CSVHandler (handles transaction)
         $result = $csvHandler->importToDB($mysqli, $temp_file);
 
         if ($result['success']) {
-            echo "<p style='color:green;'>" . $result['message'] . "</p>";
+            echo showMessage($result['message'], 'success');
         } else {
-            echo "<p style='color:red;'>" . $result['message'] . "</p>";
+            echo showMessage($result['message'], 'error');
         }
     } else {
-        echo "<p style='color:red;'>Validation errors:</p>";
+        echo showMessage("Validation errors:", 'error');
         echo "<ul>";
         foreach ($validation as $error) {
             echo "<li>$error</li>";
@@ -68,11 +75,11 @@ if (isset($_POST['reset'])) {
 
         fclose($file);
         $mysqli->commit();
-        echo "<p>Database reset!</p>";
+        echo showMessage("Database reset!", 'success');
 
     } catch (Exception $e) {
         $mysqli->rollback();
-        echo "<p>Error: " . $e->getMessage() . "</p>";
+        echo showMessage("Error: " . $e->getMessage(), 'error');
     }
 }
 
@@ -107,6 +114,8 @@ if ($result->num_rows > 0) {
         echo "</tr>";
     }
     echo "</table>";
+} else {
+    echo showMessage("No teas in database yet.", 'warning');
 }
 
 require_once 'includes/footer.php';

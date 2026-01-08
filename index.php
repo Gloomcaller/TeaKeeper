@@ -2,7 +2,7 @@
 require_once 'includes/database.php';
 require_once 'includes/header.php';
 
-echo "<h1>TeaKeeper - Test Page</h1>";
+echo "<h1>TeaKeeper - Home Page</h1>";
 echo "<p>Testing database connection...</p>";
 
 if ($mysqli->connect_error) {
