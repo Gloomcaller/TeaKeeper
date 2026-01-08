@@ -24,7 +24,7 @@ $total = $result->num_rows;
 echo "<p>Total teas: $total</p>";
 
 if ($total > 0) {
-    echo "<table border=1>";
+    echo "<table>";
     echo "<tr>";
     echo "<th>ID</th>";
     echo "<th>Date</th>";

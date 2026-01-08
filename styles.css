@@ -8,6 +8,12 @@ td a {
     text-decoration: none;
 }
 
+table,
+th,
+td {
+    border: 1px black solid;
+}
+
 .cal-month {
     float: left;
     width: 30%;

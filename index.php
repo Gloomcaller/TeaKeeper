@@ -29,7 +29,7 @@ if ($row['count'] > 0) {
     echo "<h3>First 5 Teas:</h3>";
     $teas = $mysqli->query("SELECT * FROM teas ORDER BY drink_date LIMIT 5");
 
-    echo "<table border=1>";
+    echo "<table>";
     echo "<tr><th>ID</th><th>Date</th><th>Brand</th><th>Name</th><th>Flavor</th></tr>";
 
     while ($tea = $teas->fetch_assoc()) {
