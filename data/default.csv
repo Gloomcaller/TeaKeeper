@@ -1,6 +1,118 @@
 drink_date,brand,tea_name,flavor
 2025-01-01,Fructus,Fructus 4 Tea Limited Edition,Ginger + Lemon
-2025-01-02,dmBio,Delfi Glucksmoment,Basil, Lemon and Sweet Blackberry Leaf
+2025-01-02,dmBio,Dein Glücksmoment,Basil, Lemon and Sweet Blackberry Leaf
 2025-01-03,Fructus,Fructus 4 Tea Limited Edition,Apple + Cinnamon
 2025-01-04,Lord Nelson,Green Tea Classic,Green Tea
-2025-01-05,Fructus,Taste My Italy,Lemon, White Hibiscus, Basil
+2025-01-04,Teaya,Taste My Italy,Lemon, White Hibiscus, Basil
+2025-01-05,Fructus,Fructus 4 Tea Limited Edition,Strawberry + Vanilla
+2025-01-06,dmBio,Dein Glücksmoment,Basil, Lemon and Sweet Blackberry Leaf
+2025-01-07,Fructus,Fructus 4 Tea Limited Edition,Apple + Cinnamon
+2025-01-08,Welton,Hibiscus,Hibiscus
+2025-01-09,Fructus,Praznična fantazija,Hibiscus, Rosehip, Wild Apple, Orange, Cinnamon and Clove
+2025-01-10,dmBio,Guten Abend Tee,
+2025-01-11,dmBio,Guten Abend Tee,
+2025-01-12,Fructus,Praznična fantazija,
+2025-01-14,Welton,Peach Mango,Peach + Mango
+2025-01-15,dmBio,Guten Abend Tee,
+2025-01-17,Menza,Menza Tea,Questionable Herbs
+2025-01-17,Ahmad Tea,Sleep,
+2025-01-18,Ahmad Tea,Sleep,
+2025-01-19,dmBio,Guten Abend Tee,
+2025-01-22,Galija,Green Tea,Green Tea
+2025-01-22,Milford,Früchte-Mix,Hibiscus, Rosehip, Orange Peel, Elderberry and Lemon Peel
+2025-01-23,Fructus,Praznična fantazija,
+2025-01-24,Ahmad Tea,Sleep,
+2025-01-25,dmBio,Dein Glücksmoment,
+2025-01-29,dmBio,Dein Glücksmoment,
+2025-01-30,K Plus,Zeleni čaj,Green Tea
+2025-02-02,K Plus,Kamilica,Chamomile
+2025-02-03,Lord Nelson,Ginger Tea Extra Strong,Ginger, Lemon, Sweet Blackberry Leaf
+2025-02-03,Maxi,Nana,Peppermint
+2025-02-05,Macchiato,Green Tea,Green Tea
+2025-02-05,Macchiato,Green Tea,Green Tea
+2025-02-06,Welton,Rtanjski čaj,Winter Savory
+2025-02-07,Milford,Früchte-Mix,
+2025-02-08,Chill Out,Fruit Tea,
+2025-02-08,Macchiato,Green Tea,
+2025-02-11,Milford,Peppermint,Peppermint
+2025-02-13,Ahmad Tea,Sleep,
+2025-02-14,Teekanne,Peppermint,Peppermint
+2025-02-14,Julius Meinl (Zeppelin),Camomile,Camomile
+2025-02-17,Fructus,Kamilica,
+2025-02-17,Fructus,Kamilica,
+2025-02-18,Ahmad Tea,Sleep,
+2025-02-19,Fructus,Crni čaj English Breakfast,Black Tea
+2025-02-23,Coffee Bara,Relax čaj,
+2025-02-24,Teahouse Exclusives (Fišer),Camomile,Camomile
+2025-02-24,Dolcezza (Lenta),Pina Colada,Pineapple, Coconut, Apple, Rosehip, Hibiscus
+2025-02-25,dmBio,Guten Abend Tee,
+2025-03-01,Fructus,Ginger,
+2025-03-01,Mad Hatter,Black Mango,Black Tea, Mango, Sunflower Petals
+2025-03-04,Milford (Foxtrot),Grüner Tee,Green Tea
+2025-03-09,Teekanne,Lemon & Ginger,
+2025-03-09,Teekanne,Lemon & Ginger,
+2025-03-10,Coffee Room,Đumbir,Ginger
+2025-03-11,Teekanne,Lemon & Ginger,
+2025-03-12,Welton,Rtanjski čaj,
+2025-03-18,Fructus,Fructus Exclusive Mojito,Rosehip, Mint, Wild Apple, Hibiscus, Lemon
+2025-03-28,Ronnefeldt (Loft),Leaf Cup Rooibos Cream Orange,Rooibos, Orange
+2025-04-05,Ukusi moga kraja,Narodni čaj,Rosehip, Blackberry, Mint, Breckland Thyme, Camomile
+2025-04-06,Ronnefeldt (Kafidžona),Leaf Cup Rooibos Cream Orange,
+2025-04-08,Kuća čaja (La Barba),Moonlight Mango,White Tea, Mango, Peach, Marigold
+2025-04-26,Teahouse Exclusives (The Pub),Green Tea,Green Tea
+2025-05-07,Teekanne,Lemon & Ginger,
+2025-05-08,MAXI,Kamilica,
+2025-05-20,Welton,Camomile,
+2025-05-22,Welton,Camomile,
+2025-08-26,Teekanne,Lemon & Ginger,
+2025-09-11,Mad Hatter (Čarolija),Flower Magic,
+2025-09-17,Fructus (Loft),Nana,
+2025-09-18,dmBio,Guten Abend Tee,
+2025-09-28,Fructus (Libero),Jabuka sa cimetom,
+2025-10-02,dmBio,Wintertee,Apple, rooibos, cinnamon, clove
+2025-10-03,Macval,Šumsko voće,
+2025-10-04,Herbella,Zeleni čaj,
+2025-10-09,Ronnefeldt (Šećer & Soul),Leaf Cup Green Dragon Lung Ching,
+2025-10-10,Teatime,Nana,
+2025-10-14,Herbella,Nana,
+2025-10-16,Teatime,Nana,
+2025-10-19,Herbella,Kamilica,
+2025-10-20,Shoti Maa,Emotional Clarity,Hibiscus, Mint, Licorice
+2025-10-22,Teatime,Nana,
+2025-10-24,Milford,Peppermint,
+2025-10-26,Milford,Blackberry-Raspberry,
+2025-10-28,Herbella,Kamilica,
+2025-10-28,Macval,Šumsko voće,
+2025-10-29,Teatime,Nana,
+2025-11-06,Teatime,Nana,
+2025-11-09,Teaya,Entdecke 3 Exklusive Bio Tees (India),Licorice, Tulsi
+2025-11-11,Teaya,Probiere 4 Inspirierende Bio Tees (Kanada),Blueberry, Maple Syrup
+2025-11-12,Teaya,Probiere 4 Inspirierende Bio Tees (Neuseeland),Lemon Myrtle, Manuka Honey
+2025-11-12,Teaya,Japan,Ginger, Yuzu
+2025-11-13,Teatime,Nana,
+2025-11-14,Teatime,Nana,
+2025-11-15,dmBio,Wintertee,
+2025-11-16,Ahmad Tea,Sleep,
+2025-11-18,Milford (Kocka),Peppermint,
+2025-11-20,Fructus,Fructus Exclusive Pomorandža sa đumbirom,Hibiscus, Orange, Ginger
+2025-11-21,Teatime,Nana,
+2025-11-22,Teaya,Entdecke 3 Exklusive Bio Tees (Madagaskar),Bourbon Vanilla, Tonka
+2025-11-23,Teaya,Entdecke 3 Exklusive Bio Tees (Mexiko),Sweet Orange, Chili
+2025-11-25,Institut Dr Josif Pančić,Gastro Mix,St. John's Wort, Camomile, Mint, Licorice
+2025-12-02,Ronnefeldt (Moskva),Leaf Cup Rooibos Cream Orange,
+2025-12-05,Teatime,Nana,
+2025-12-07,Milford (Brunch),Strawberry-Yoghurt,
+2025-12-12,Loft,Brusnica,
+2025-12-15,Teekanne,Lemon & Ginger,
+2025-12-17,dmBio,Wintertee,
+2025-12-17,Shoti Maa,Emotional Clarity,
+2025-12-18,Fructus,Fructus Exclusive Jagoda sa vanilom,
+2025-12-19,Teatime,Nana,
+2025-12-19,Fructus,Fructus Exclusive Jagoda sa vanilom,
+2025-12-19,Fructus,Fructus Exclusive Đumbir sa limunom,
+2025-12-24,Ukusi moga kraja,List koprive,
+2025-12-24,Fructus,Kamilica,
+2025-12-25,Teekanne,Forest fruits,
+2025-12-26,Fructus,Kamilica,
+2025-12-29,Milford (Kocka),Pfefferminze,
+2025-12-30,dmBio,Wintertee,
