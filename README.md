@@ -1,1 +1,14 @@
-# Just pretend this is a READMME :)
+# TeeKeeper TODO:
+- Home page needs to be an actual home page, not just tests.
+- Site currently works only for 2025, it should support all years.
+- About and Contact pages are useless and should be removed/dispersed into other pages.
+- There is an extra table in the DB that needs to be reviewed/removed.
+- Header should have links.
+- Remove Quick Nav.
+- Add blank/default CSV loader.
+- Add favicon and logo.
+- Tee table doesn't have an Add button.
+- Reset should ask the user if they want DDefault or Blank CSV.
+- In the calendar, dates that have tees should be buttons and generate a small table below to show all tees from that date.
+- Site isn't optimized for mobile/tablet devices and small screens.
+- Need to test the limits of ctype validation on tee brands and other string entry code.
